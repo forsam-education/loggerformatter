@@ -2,6 +2,7 @@ package loggerformatters
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/forsam-education/simplelogger"
 	"time"
 )
@@ -38,5 +39,5 @@ func (formatter JSONFormatter) Format(level simplelogger.LogLevel, message strin
 		return "", err
 	}
 
-	return string(jsonData), nil
+	return fmt.Sprintf("%s\n", string(jsonData)), nil
 }
