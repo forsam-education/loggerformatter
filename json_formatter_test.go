@@ -1,4 +1,4 @@
-package loggerformatter
+package loggerformatters
 
 import (
 	"github.com/forsam-education/simplelogger"
